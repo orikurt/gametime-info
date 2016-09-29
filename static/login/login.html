@@ -1,0 +1,15 @@
+<div class="login_wrapper wrapper col-lg-6 col-md-6 col-sm-12 col-xs-12">
+	<div class="closeButton" ng-click="close()"><span class="glyphicon glyphicon-remove"></span></div>
+	<div class="registration" ng-if="view_mode === 'register'">
+		<h3>Sign Up for a FREE Account</h3>
+		<h4 class="messages">{{message}}</h4>
+		<form ng-submit="register()">
+			<input type="text" class="user-username" ng-model="user.username" placeholder="UserName" ng-change="clearErrors('user-username')" required></input>
+			<input type="email" class="user-email" ng-model="user.email" placeholder="Email Address" ng-change="clearErrors('user-email')" required></input>
+			<input type="password" class="user-password" ng-model="user.password" placeholder="Password" ng-change="clearErrors('user-password')" required></input>
+			<input type="password" class="user-password" ng-model="user.confirm" placeholder="Confirm Password" ng-change="clearErrors('user-password')" required></input>
+			<button type="submit" class="register">Register</button>
+			<label class="change-line">Already have an account? <label class="change-link login-link" ng-click="goTo('login')">login</label></label>
+		</form>		
+	</div>
+</div>

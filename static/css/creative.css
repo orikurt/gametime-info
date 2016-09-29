@@ -235,6 +235,9 @@ header .header-content .header-content-inner p {
   max-width: 650px;
   margin: 0 auto;
 }
+.portfolio-box img {
+  height: 380px;
+}
 .portfolio-box .portfolio-box-caption {
   color: white;
   opacity: 0;
@@ -282,6 +285,9 @@ header .header-content .header-content-inner p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 22px;
   }
+}
+#info .text-center {
+  margin-bottom: 15px;
 }
 .call-to-action h2 {
   margin: 0 auto 20px;

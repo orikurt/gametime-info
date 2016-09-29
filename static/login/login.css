@@ -1,0 +1,121 @@
+/* register\login\forgot password */
+
+.register_menu .modal-dialog{
+	margin-top: 12em;
+	width: 100%;
+	color: #F5F5DC;
+}
+
+.register_menu .modal-content, .popup_menu .modal-content, .error_menu .modal-content{
+	background-color: transparent;
+	box-shadow: none;
+	padding: 1em;
+}
+
+.register_menu .modal-content .wrapper{
+	background-color: rgba(0,0,0, 0.9);
+	padding: 1.5em;
+	text-align: center;
+	border: 0.1em solid #669170;
+	float: none;
+	margin: 0 auto;
+}
+
+.register_menu .modal-content .wrapper .change-line{
+	width: 100%;
+}
+
+.register_menu .modal-content .wrapper .change-line .change-link{
+	color: #669170;
+	cursor: pointer;
+}
+
+.register_menu .modal-content .wrapper h3{
+	color: #669170;
+	margin-bottom: 0em;
+	margin-top: 0;
+	font-size: 1.8em;
+	line-height: 2em;
+}
+
+.register_menu .modal-content .wrapper .messages{
+	margin-bottom: 1.5em;
+
+}
+
+.register_menu .modal-content .wrapper input{
+	width: 70%;
+	height: 3em;
+	margin: 0 15% 1em 15%;
+	padding: 0.5em;
+	color: #000;
+	line-height: 3em;
+}
+
+.register_menu .modal-content .wrapper .registration button{
+	background-color: #669170;
+	color: #222;
+	height: 3em;
+	width: 5.2em;
+	line-height: 2em;
+	margin: 0.5em;
+}
+
+.register_menu .modal-content .wrapper .registration button:hover{
+	background-color: #73E864;
+}
+
+/* My account and other 'section like' screens */
+
+.popup_menu{
+    width: 100%;
+}
+
+.popup_menu .modal-dialog{
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+
+.popup_menu .modal-dialog .wrapper{
+	background-color: rgba(3, 3, 3, 0.9);
+    border: 0.1em solid #669170;
+    border-radius: 0.25em;	
+    padding: 1.5em;
+    padding-top: 0;
+    position: relative;
+    top: 4.7em;
+    margin: 0 auto;
+    float: none;
+    min-height: 10em;
+}
+
+.popup_menu .title{
+	color: #669170;
+	margin-top: 1em;
+	font-family: 'jedi';
+}
+
+.popup_menu .closeButton, .register_menu .wrapper .closeButton{
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    border: 0.2em solid #669170;
+    background-color: #669170;
+    color: #000;
+    line-height: 1.5em;
+    cursor: pointer;
+    float: right;
+    left: 2em;
+    top: -1em;
+}
+
+.register_menu .wrapper .closeButton, .error_menu .wrapper .closeButton{
+	top: -2em;
+}
+
+.popup_menu .closeButton:hover, .wrapper .closeButton:hover{
+	background-color: #00ED5B;
+	border-color: #00ED5B;
+}
