@@ -1,18 +1,30 @@
 /* register\login\forgot password */
 
-.register_menu .modal-dialog{
+.jquery-modal .modal {
+  display: inline;
+  margin: 0 auto;
+  background-color: transparent;
+  max-width: none;
+  top: 10em;
+  overflow: visible;
+  padding: 0;
+  height: 5em;
+}
+
+
+.register_menu .login_wrapper{
 	margin-top: 12em;
 	width: 100%;
 	color: #F5F5DC;
 }
 
-.register_menu .modal-content, .popup_menu .modal-content, .error_menu .modal-content{
+.register_menu .login_wrapper, .popup_menu .modal-content, .error_menu .modal-content{
 	background-color: transparent;
 	box-shadow: none;
 	padding: 1em;
 }
 
-.register_menu .modal-content .wrapper{
+.register_menu .wrapper{
 	background-color: rgba(0,0,0, 0.9);
 	padding: 1.5em;
 	text-align: center;
@@ -21,16 +33,16 @@
 	margin: 0 auto;
 }
 
-.register_menu .modal-content .wrapper .change-line{
+.register_menu .wrapper .change-line{
 	width: 100%;
 }
 
-.register_menu .modal-content .wrapper .change-line .change-link{
+.register_menu .wrapper .change-line .change-link{
 	color: #669170;
 	cursor: pointer;
 }
 
-.register_menu .modal-content .wrapper h3{
+.register_menu .wrapper h3{
 	color: #669170;
 	margin-bottom: 0em;
 	margin-top: 0;
@@ -38,12 +50,12 @@
 	line-height: 2em;
 }
 
-.register_menu .modal-content .wrapper .messages{
+.register_menu .wrapper .messages{
 	margin-bottom: 1.5em;
 
 }
 
-.register_menu .modal-content .wrapper input{
+.register_menu  .wrapper input{
 	width: 70%;
 	height: 3em;
 	margin: 0 15% 1em 15%;
@@ -52,7 +64,7 @@
 	line-height: 3em;
 }
 
-.register_menu .modal-content .wrapper .registration button{
+.register_menu .wrapper .registration button{
 	background-color: #669170;
 	color: #222;
 	height: 3em;
@@ -61,7 +73,7 @@
 	margin: 0.5em;
 }
 
-.register_menu .modal-content .wrapper .registration button:hover{
+.register_menu .wrapper .registration button:hover{
 	background-color: #73E864;
 }
 
@@ -71,13 +83,13 @@
     width: 100%;
 }
 
-.popup_menu .modal-dialog{
+.popup_menu .login_wrapper{
 	width: 100%;
 	text-align: center;
 	margin: 0;
 }
 
-.popup_menu .modal-dialog .wrapper{
+.popup_menu .wrapper{
 	background-color: rgba(3, 3, 3, 0.9);
     border: 0.1em solid #669170;
     border-radius: 0.25em;	

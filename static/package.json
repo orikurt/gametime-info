@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "express": "^4.14.0",
+    "jquery-modal": "^0.8.0",
     "serve-favicon": "^2.3.0"
   }
 }

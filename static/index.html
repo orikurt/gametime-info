@@ -24,6 +24,7 @@
 
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/jquery.modal.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -75,6 +76,7 @@
                 <hr>
                 <p>Trade your favorite stars in a performance based stock market</p>
                 <a href="https://gametimemarket.com" class="btn btn-primary btn-xl page-scroll">Explore</a>
+                <a href="login/login.html" rel="modal:open" class="btn btn-warning btn-xl page-scroll">Sign Up</a>
             </div>
         </div>
     </header>
@@ -105,21 +107,21 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <i class="fa fa-4x fa-usd text-primary sr-icons"></i>
+                        <h3>Knowledge = Profit</h3>
+                        <p class="text-muted">Turn your expertise into earnings</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-plane text-primary sr-icons"></i>
                         <h3>Trade Anywhere</h3>
                         <p class="text-muted">With GameTime Market's web app, all you need is an account and an internet connection</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+                        <i class="fa fa-4x fa-bar-chart-o text-primary sr-icons"></i>
                         <h3>Complete Transparency</h3>
                         <p class="text-muted">Know exactly what's going on with your assets at any time</p>
                     </div>
@@ -127,8 +129,8 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Trade with Love</h3>
-                        <p class="text-muted">Trade assets that you know and interest you</p>
+                        <h3>Personal connection</h3>
+                        <p class="text-muted">Make money trading in your favorite sport</p>
                     </div>
                 </div>
             </div>
@@ -188,7 +190,7 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Open an Account for FREE</h2>
-                <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Sign Up</a>
+                <a href="login/login.html" rel="modal:open" class="btn btn-default btn-xl sr-button">Sign Up</a>
             </div>
         </div>
     </aside>
@@ -247,7 +249,10 @@
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>
-
+    <script src="js/jquery.modal.min.js"></script>
+    <script type="text/javascript">
+        $.modal.defaults.modalClass = "modal col-lg-6 col-sm-12";
+    </script>
 </body>
 
 </html>
