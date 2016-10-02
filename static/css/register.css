@@ -131,3 +131,11 @@
 	background-color: #00ED5B;
 	border-color: #00ED5B;
 }
+
+.error{
+	border: 3px solid #F50035;
+}
+
+.errorMsg{
+	color: #F50035;
+}

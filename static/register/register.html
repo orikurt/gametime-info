@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GameTime Market Login</title>
+    <title>GameTime Market Sign Up</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <script src="login/loginCtrl.js"></script>
+    <script src="register/registerCtrl.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,17 +30,20 @@
     <![endif]-->
 
 </head>
+
 <body>
 	<div class="register_menu">
 		<div class="login_wrapper wrapper col-lg-6 col-md-6 col-sm-12 col-xs-12">
 			<div class="registration">
-				<h3>Login to Your Account</h3>
-				<form ng-submit="login()">
-					<input type="text" class="user-username" ng-model="user.username" placeholder="UserName" ng-change="clearErrors('user-username')" required></input>
-					<input type="password" class="user-password" ng-model="user.password" placeholder="Password" ng-change="clearErrors('user-password')" required></input>
-					<button type="submit" class="register">Login</button>
-					<label class="change-line">Don't have an account yet? <a class="change-link forgot-link" href="register/register.html" rel="modal:open">Sign up</a> for a free account</label>
-					<label class="change-line">Forgot your password? <a class="change-link login-link" href="login/forgot.html" rel="modal:open">click here</a></label>
+				<h3>Sign Up for a FREE Account</h3>
+				<h4 class="messages">start trading Today</h4>
+				<form class="register-form">
+					<input type="text" class="user-username" name="username" placeholder="UserName" required></input>
+					<input type="email" class="user-email" name="email" placeholder="Email Address" required></input>
+					<input type="password" class="user-password" name="password" id="password" placeholder="Password" required></input>
+					<input type="password" class="user-password" name="confirm" id="confirm" placeholder="Confirm Password" required></input>
+					<button type="submit" class="register">Register</button>
+					<label class="change-line">Already have an account? <a class="change-link login-link" href="login/login.html" rel="modal:open">login</a></label>
 				</form>		
 			</div>
 		</div>

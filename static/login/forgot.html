@@ -33,16 +33,15 @@
 <body>
 	<div class="register_menu">
 		<div class="login_wrapper wrapper col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<div class="registration">
-				<h3>Login to Your Account</h3>
-				<form ng-submit="login()">
-					<input type="text" class="user-username" ng-model="user.username" placeholder="UserName" ng-change="clearErrors('user-username')" required></input>
-					<input type="password" class="user-password" ng-model="user.password" placeholder="Password" ng-change="clearErrors('user-password')" required></input>
-					<button type="submit" class="register">Login</button>
-					<label class="change-line">Don't have an account yet? <a class="change-link forgot-link" href="register/register.html" rel="modal:open">Sign up</a> for a free account</label>
-					<label class="change-line">Forgot your password? <a class="change-link login-link" href="login/forgot.html" rel="modal:open">click here</a></label>
-				</form>		
-			</div>
+            <div class="registration">
+                <h3>Password Reset</h3>
+                <h4 class="messages">Send a password reset link to your email</h4>
+                <form ng-submit="sendPasswordReset()">
+                    <input type="email" class="user-email" ng-model="user.email" placeholder="Email Address" ng-change="clearErrors('user-email')" required></input>        
+                    <button type="submit" class="register">Send</button>
+                    <label class="change-line">back to <a class="change-link login-link" href="login/login.html" rel="modal:open">login page</a></label>
+                </form>     
+            </div>
 		</div>
 	</div>
 </body>
