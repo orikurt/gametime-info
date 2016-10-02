@@ -18,7 +18,7 @@ var onSuccess = function(data, status, xhr){
 
 var onError = function(err){
 	err = JSON.parse(err.responseText);
-	console.log('register:: error', err);
+	console.error('register:: error', err);
 	if (err.code === 11000){
 		var dup_key = err.message.split(': ')[2].split('_')[0];
 		$('.user-' + dup_key).addClass('error');
