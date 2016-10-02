@@ -5,7 +5,7 @@ var clear = function(){
 
 var onSuccess = function(data, status, xhr){
 	console.log('register:: success', data);
-	window.location.replace(conf.app.protocol + '://' + conf.app.host);
+	window.location.href = conf.app.protocol + '://' + conf.app.host;
 	/*
 	$.ajax({
 		method: 'GET',
