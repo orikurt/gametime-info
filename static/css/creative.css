@@ -234,14 +234,21 @@ header .header-content .header-content-inner p {
 .service-box p {
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .portfolio-box img {
+    height: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .jquery-modal {
+    font-size: 80%;
+  }
+}
 .portfolio-box {
   position: relative;
   display: block;
   max-width: 650px;
   margin: 0 auto;
-}
-.portfolio-box img {
-  height: 380px;
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
@@ -293,6 +300,22 @@ header .header-content .header-content-inner p {
 }
 #info .text-center {
   margin-bottom: 50px;
+}
+.info-wrap {
+  height: 100%;
+  overflow: auto;
+}
+.info-wrap .info-page {
+  background-color: #111;
+  padding: 2em;
+  border-radius: 1em;
+  border: 1px solid;
+}
+.info-wrap .info-page .section-heading {
+  color: #669071;
+}
+.info-wrap .info-page p {
+  line-height: 1.8em;
 }
 .call-to-action h2 {
   margin: 0 auto 20px;

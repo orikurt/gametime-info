@@ -249,14 +249,25 @@ header {
     }
 }
 
+@media (min-width: 768px){
+    .portfolio-box {
+        img{
+            height: 380px;
+        }
+    }    
+}
+
+@media (max-width: 768px){
+    .jquery-modal {
+        font-size: 80%;
+    }    
+}
+
 .portfolio-box {
     position: relative;
     display: block;
     max-width: 650px;
     margin: 0 auto;
-    img{
-        height: 380px;
-    }
     .portfolio-box-caption {
         color: white;
         opacity: 0;
@@ -314,6 +325,23 @@ header {
 #info {
     .text-center{
         margin-bottom: 50px;
+    }
+}
+
+.info-wrap{
+    height: 100%;
+    overflow: auto;
+    .info-page{
+        background-color: #111;
+        padding: 2em;
+        border-radius: 1em;
+        border: 1px solid;
+        .section-heading{
+            color: #669071;
+        }
+        p{
+            line-height: 1.8em;
+        }
     }
 }
 

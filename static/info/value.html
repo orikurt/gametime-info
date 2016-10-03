@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GameTime Market Login</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="info-wrap">
+        <div class="info-page">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">How are players valuated?</h2>
+                    <hr class="light">
+                    <p class="text-faded">Players stock value is calculated by aggregating the players performance over the course of his carreer. Individual performance and team success contribute to stock value. 
+                    The following formula illustrates the players value calculation:<br>
+                        <p class="equation">
+                            <span class="exp">&Sigma;</span>
+                            &theta;<label>t</label>
+                            + <span class="pyp">&Sigma;</span>
+                            &theta;<label>N</label>*&Phi;^<label class="pow">t-N</label>
+                        </p>
+                        <p class="text-faded">
+                            Where:
+                        </p>
+                        <p class="equation notations">
+                            <label class="theta"><label class="notation extra">&theta;</label> = ( (MIN * 1/40) + (TOV * 1/5) + (REB * 1/15) + (PTS * 1/30) + (STL * 1/3) + (BLK * 1/3) + (FT_PCT * 1) + (FG_PCT * 1) + (AST * 1/12) +(FG3_PCT * 2) ) / GP * 100</label>
+                            <br>
+                            <label class="notation">t</label> = notates a single season
+                            <br>
+                            <label class="notation">N</label> = Player's season experience
+                            <br>
+                            <label class="notation">PYP</label> = Projected years played based on a linear regression of draft pick, college averages, age entering the league, size and salary
+                            <br>
+                            <label class="notation">&Phi;</label> = Age factor to normalize a players expexted production
+                        </p>                
+                    </p>
+                </div>
+            </div>      
+        </div>        
+    </div>
+    <style type="text/css">
+        .equation {
+            line-height: 50px;
+            color: #669071;
+        }
+        .notations{
+            text-align: left;
+        }
+        .notation{
+            font-size: 1.1em;
+            color: #F5F5F5;
+            top: 0;
+        }
+        .extra{
+            font-size: 1.5em;
+        }
+        .theta{
+            font-size: 0.8em;
+            top: 0;
+        }
+        span {
+            position: relative;
+            font-size: 2.5em;
+            display: inline-block;
+            line-height: .7em;
+            vertical-align: middle;
+        }
+
+        span:before {
+            font-size: 12px;
+            display: block;
+            position absolute;
+            left: 0px;
+            top: 0;
+            width: 22px;
+            text-align: center;
+        }
+
+        span:after {
+            font-size: 12px;
+            display: block;
+            position absolute;
+            left: 0;
+            bottom: 0;
+            width: 42px;
+            text-align: center;
+        }
+        .exp:before{
+            content: "N";
+        }
+        .exp:after{
+            content: "t = 1";
+        }        
+        .pyp:before{
+            content: "PYP";
+        }
+        .pyp:after{
+            content: "t = N+1";
+        }
+        label{
+            font-size: 0.7em;
+            position: relative;
+            top: 5px;
+        }
+        .pow{
+            top: -10px;
+        }
+    </style>
+</body>
+</html>

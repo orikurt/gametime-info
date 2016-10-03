@@ -5,10 +5,12 @@
   margin: 0 auto;
   background-color: transparent;
   max-width: none;
-  top: 10em;
+  margin-top: 7em;
+  margin-bottom: 5em;
   overflow: visible;
   padding: 0;
-  height: 5em;
+  box-shadow: none;
+  height: auto;
 }
 
 

@@ -1,5 +1,5 @@
-var clear = function(){
-	$('.messages').html('And Start Trading').removeClass('errorMsg');
+var clear = function(msg){
+	$('.messages').html(msg).removeClass('errorMsg');
 	$('.user-username, .user-password, .user-email').removeClass('error');
 };
 
@@ -65,5 +65,10 @@ $(document).ready(function(){
 		});		
 	});
 
-	$('.login-form input, .forgot-form input').on('keydown', clear);
+	$('.login-form input').on('keydown', function(){
+		clear('And Start Trading Today');
+	});
+	$('.forgot-form input').on('keydown', function(){
+		clear('Send a password reset link to your email');
+	});
 });
