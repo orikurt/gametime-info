@@ -6,14 +6,6 @@ var clear = function(){
 var onSuccess = function(data, status, xhr){
 	console.log('register:: success', data);
 	window.location.href = conf.app.protocol + '://' + conf.app.host;
-	/*
-	$.ajax({
-		method: 'GET',
-		url: 'https://' + window.location.hostname + '/login',
-		xhrFields: { withCredentials: true },
-		success: console.log
-	});
-	*/
 };
 
 var onError = function(err){
@@ -27,7 +19,7 @@ var onError = function(err){
 };
 
 $(document).ready(function(){
-	console.log('loginCtrl:: ready');
+	console.log('registerCtrl:: ready', conf.app);
 	
 	$('.register-form').on('submit', function(e){
 		console.log('register-form:: submit', $('.register-form').serialize());
@@ -40,7 +32,7 @@ $(document).ready(function(){
 		}
 		$.ajax({
 			method: 'POST',
-			url: 'https://' + window.location.hostname + '/register',
+			url: conf.app.protocol + '://' + conf.app.host + '/register',
 			data: $('.register-form').serialize(),
 			xhrFields: { withCredentials: true },
 			success: onSuccess,

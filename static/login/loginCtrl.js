@@ -58,7 +58,7 @@ $(document).ready(function(){
 		e.preventDefault();		
 		$.ajax({
 			method: 'GET',
-			url: 'https://' + window.location.hostname + '/sendresetpassword',
+			url: conf.app.protocol + '://' + conf.app.host + '/sendresetpassword',
 			data: $('.forgot-form').serialize(),
 			success: onSent,
 			error: onSentError
