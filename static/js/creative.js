@@ -28,6 +28,11 @@
         }
     })
 
+    $('#explore').on('click', function(){
+        console.log('going to app', conf.app);
+        window.location.href = conf.app.protocol + "://" + conf.app.host;
+    });
+
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
