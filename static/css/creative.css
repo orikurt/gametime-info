@@ -29,6 +29,9 @@ a:hover,
 a:focus {
   color: #51725a;
 }
+.color-link {
+  color: #F5F5D5;
+}
 h1,
 h2,
 h3,
