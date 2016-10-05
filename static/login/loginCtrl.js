@@ -45,7 +45,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$.ajax({
 			method: 'POST',
-			url: 'https://' + window.location.hostname + '/login',
+			url: conf.app.protocol + '://' + conf.app.host + '/login',
 			data: $('.login-form').serialize(),
 			xhrFields: { withCredentials: true },
 			success: onSuccess,
