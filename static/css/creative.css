@@ -186,14 +186,14 @@ header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
 }
-header .header-content .header-content-inner h1 .version {
+header .header-content .header-content-inner .version {
   font-size: 22px;
   text-transform: none;
   position: relative;
-  top: 24px;
-  right: 32px;
+  top: 0px;
+  left: 132px;
 }
-header .header-content .header-content-inner h1 .version label {
+header .header-content .header-content-inner .version label {
   color: #669071;
   font-size: 110%;
 }
