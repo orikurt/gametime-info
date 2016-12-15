@@ -33,6 +33,11 @@
         window.location.href = conf.app.protocol + "://" + conf.app.host;
     });
 
+    if (window.self !== window.top){
+        $('.explore').css('display', 'none');
+    }
+
+
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
     sr.reveal('.sr-icons', {
